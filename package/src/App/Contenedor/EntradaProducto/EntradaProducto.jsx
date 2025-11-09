@@ -9,7 +9,7 @@ export default function EntradaProducto({
 
   async function incluirProducto() {
     if (!categoriaId) {
-      console.error("❌ Error: categoriaId no está definido");
+      console.error(" Error: categoriaId no está definido");
       return;
     }
 

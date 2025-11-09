@@ -8,7 +8,6 @@ function Product({ id, name, price, categoriaID, onDelete, onEdit }) {
 
   const precio = parseFloat(nuevoPrecio);
 
-  // Guardar cambios y salir de edición
   const guardarCambios = () => {
     onEdit(id, { nombre: nuevoNombre, precio: parseFloat(nuevoPrecio) });
     setEditable(false);

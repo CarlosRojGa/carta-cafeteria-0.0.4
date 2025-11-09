@@ -1,0 +1,13 @@
+.product {
+    padding: 0 40px 0 40px;
+}
+.price, .name {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    margin-top: 2px;
+}
+
+.price {
+    text-align: right;
+}

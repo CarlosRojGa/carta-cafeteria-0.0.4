@@ -1,0 +1,14 @@
+body {
+  background-image: url('https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg');
+}
+
+.contenedor {
+  width: 50vw;
+  height: 90vh;
+  background-color: burlywood;
+  margin: auto;
+}
+
+li {
+  list-style-type: none;
+}

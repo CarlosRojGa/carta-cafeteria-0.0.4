@@ -55,7 +55,7 @@ function Category({ name, id, estadoCategorias, setCategorias, productosPorCateg
         }
     }
 
-    async function handleDeleteProduct(productId) {
+    async function EliminarProducto(productId) {
         const API_URL = `https://jlorenzo.ddns.net/carta_restaurante/productos/${productId}`;
         const res = await fetch(API_URL, {
             method: "DELETE",
@@ -77,7 +77,7 @@ function Category({ name, id, estadoCategorias, setCategorias, productosPorCateg
         }
     }
 
-    async function handleEditProduct(productId, { nombre, precio }) {
+    async function ModificarProducto(productId, { nombre, precio }) {
         const API_URL = `https://jlorenzo.ddns.net/carta_restaurante/productos/${productId}`;
         const res = await fetch(API_URL, {
             method: "PUT",
@@ -125,8 +125,8 @@ function Category({ name, id, estadoCategorias, setCategorias, productosPorCateg
                 price={parseFloat(prod.precio)}
                 id={prod.id}
                 categoriaID={id}
-                onDelete={handleDeleteProduct}
-                onEdit={handleEditProduct}
+                onDelete={EliminarProducto}
+                onEdit={ModificarProducto}
             />
         ))
         : null;

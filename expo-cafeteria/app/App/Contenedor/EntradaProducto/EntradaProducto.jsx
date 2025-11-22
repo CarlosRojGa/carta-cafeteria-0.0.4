@@ -56,7 +56,30 @@ export default function EntradaProducto({
 }
 
 const styles = StyleSheet.create({
-  
+  container: {
+    marginVertical: 12,
+    alignItems: "center",
+  },
+  input: {
+    width: "80%",
+    borderWidth: 1,
+    borderColor: "#000000ff",
+    borderRadius: 4,
+    padding: 8,
+    marginVertical: 6,
+  },
+  button: {
+    backgroundColor: "burlywood",
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 4,
+    marginTop: 10,
+  },
+  buttonText: {
+    color: "#000",
+    fontWeight: "bold",
+    textAlign: "center",
+  },
 });
 
 

@@ -4,12 +4,16 @@ import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Category from './Products/Category/Category';
 import Spacer from './Spacer/Spacer';
+import MapaBoton from './MapaBoton';
+import FotoCamperCafe from './FotoCamperCafe'
 
 function Contenedor({ categorias, setCategorias, productosPorCategoria, setProductosPorCategoria }) {
   return (
     <View style={styles.container}>
       <EntradaCategoria categorias={categorias} setCategorias={setCategorias} />
       <Header />
+      <MapaBoton />
+      <FotoCamperCafe />
       <Spacer />
 
       <FlatList
